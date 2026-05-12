@@ -16,7 +16,7 @@ export function PageTransition({ children }: PageTransitionProps) {
           duration: 0.3,
           ease: [0.22, 1, 0.36, 1]
         }}
-        className="fixed inset-0 bg-[var(--espresso)] origin-bottom z-50"
+        className="fixed inset-0 bg-[var(--espresso)] origin-bottom z-30"
       />
       <motion.div
         initial={{ scaleY: 1 }}
@@ -26,7 +26,7 @@ export function PageTransition({ children }: PageTransitionProps) {
           duration: 0.3,
           ease: [0.22, 1, 0.36, 1]
         }}
-        className="fixed inset-0 bg-[var(--espresso)] origin-top z-50"
+        className="fixed inset-0 bg-[var(--espresso)] origin-top z-30"
       />
       <motion.div
         initial={{ opacity: 0 }}

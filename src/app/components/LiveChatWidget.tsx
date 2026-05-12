@@ -158,7 +158,7 @@ export function LiveChatWidget() {
         animate={{ scale: 1 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-gradient-to-br from-[var(--espresso)] to-[#5D4A4A] text-white rounded-full shadow-xl flex items-center justify-center"
+        className="fixed bottom-6 right-6 z-[105] w-16 h-16 bg-gradient-to-br from-[var(--espresso)] to-[#5D4A4A] text-white rounded-full shadow-xl flex items-center justify-center"
         style={{ boxShadow: "0 8px 32px rgba(51, 37, 32, 0.3)" }}
       >
         <AnimatePresence mode="wait">
@@ -204,7 +204,7 @@ export function LiveChatWidget() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-24 right-6 z-50 w-full max-w-sm bg-white rounded-[var(--radius-2xl)] overflow-hidden border border-[var(--border)]"
+            className="fixed bottom-24 right-6 z-[105] w-full max-w-sm bg-white rounded-[var(--radius-2xl)] overflow-hidden border border-[var(--border)]"
             style={{ boxShadow: "0 20px 60px rgba(0, 0, 0, 0.15)", maxHeight: "600px" }}
           >
             {/* Header */}

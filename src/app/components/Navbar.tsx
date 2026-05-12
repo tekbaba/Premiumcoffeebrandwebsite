@@ -68,7 +68,7 @@ export function Navbar() {
           height: "var(--navbar-height)",
           top: "var(--announcement-offset)",
         }}
-        className={`fixed left-0 right-0 z-50 transition-[top,background-color,border-color] duration-300 ${
+        className={`fixed left-0 right-0 z-[100] transition-[top,background-color,border-color] duration-300 ${
           isScrolled
             ? "bg-[#F5EDE6]/90 backdrop-blur-md border-b border-[var(--border)]"
             : "bg-transparent"
