@@ -61,11 +61,9 @@ export function Navbar() {
 
   return (
     <>
-      <motion.nav
+      {/* motion + transform, fixed ile aynı elemanda bazı tarayıcılarda sabitlemeyi bozar; animasyon içte. */}
+      <nav
         aria-label="Birincil gezinme"
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         style={{
           height: "var(--navbar-height)",
           top: "var(--announcement-offset)",
@@ -76,6 +74,12 @@ export function Navbar() {
             : "bg-transparent"
         }`}
       >
+        <motion.div
+          className="h-full"
+          initial={{ y: -24, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        >
         <div className="h-full mx-auto px-5 md:px-20">
           <div className="flex items-center justify-between h-full max-w-[var(--container-max)] mx-auto gap-12">
             <Link to="/" className="flex items-center flex-shrink-0">
@@ -188,7 +192,8 @@ export function Navbar() {
             </div>
           </div>
         </div>
-      </motion.nav>
+        </motion.div>
+      </nav>
 
       {/* Mobile Search */}
       <AnimatePresence>
